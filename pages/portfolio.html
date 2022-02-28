@@ -20,188 +20,202 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
 
+	<link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
 	<link rel="stylesheet" href="../layout/styles/default.css" type="text/css" />
+
+
 	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+<!-- </head> -->
+
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> -->
+<!-- <link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" /> -->
 </head>
-<body>
+<body id="top">
+<div class="wrapper col1">
+  <div id="header">
+    <div class="fl_left">
+      <h1><a href="../index.html">ALOK</a></h1>
+      <p>MY FRONTEND WORK</p>
+    </div>
+    <div class="fl_right"><a href="#"><img src="../images/demo/468x60.gif" alt="" /></a></div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topbar">
+    <div id="topnav">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li class="active"><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="style-demo.html">Style Demo</a></li>
+        <li><a href="full-width.html">Full Width</a></li>
+        <li><a href="#">DropDown</a>
+          <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+          </ul>
+        </li>
+        <li class="last"><a href="#">A Long Link Text</a></li>
+      </ul>
+    </div>
+    <div id="search">
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
+          <input type="submit" name="go" id="go" value="Search" />
+        </fieldset>
+      </form>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col3">
+  <div id="breadcrumb">
+    <ul>
+      <li class="first">You Are Here</li>
+      <li>&#187;</li>
+      <li><a href="#">Home</a></li>
+      <li>&#187;</li>
+      <li><a href="#">Grand Parent</a></li>
+      <li>&#187;</li>
+      <li><a href="#">Parent</a></li>
+      <li>&#187;</li>
+      <li class="current"><a href="#">Child</a></li>
+    </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
 
-	<section class="s1">
-		<div class="main-container">
-			<div class="greeting-wrapper">
-				<h1>Hi, I'm Alok Patel</h1>
-			</div>
-
-
-			<div class="intro-wrapper">
-				<!-- {% include 'portfolio/navbar.html' %} -->
-
-				<div class="left-column">
-					<img id="profile_pic" src="../images/demo/alokDP.jpg" alt=" alok Display">
-					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
-
-					<div id="theme-options-wrapper">
-						<div data-mode="light" id="light-mode" class="theme-dot"></div>
-						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-						<div data-mode="green" id="green-mode" class="theme-dot"></div>
-						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
-					</div>
-
-					<p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
-				</div>
-
-				<div class="right-column">
-
-					<div id="preview-shadow">
-						<div id="preview">
-							<div id="corner-tl" class="corner"></div>
-							<div id="corner-tr" class="corner"></div>
-							<h3>What I Do</h3>
-							<p>I am a lead developer in present life, I enjoy development and coffee.</p>
-							<div id="corner-br" class="corner"></div>
-							<div id="corner-bl" class="corner"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+<div class="wrapper col4">
+	<div id="container">
+	  <div id="content">
+		<div id="featured_post"><img src="../images/demo/620x270.gif" alt="" />
+		  <p>This is a W3C standards compliant free website template from <a href="http://www.os-templates.com/">OS Templates</a>.</p>
+		  <p>This template is distributed using a <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>, which allows you to use and modify the template for both personal and commercial use when you keep the provided credit links in the footer. For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>.</p>
 		</div>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-
-			<div class="about-wrapper">
-				<div class="about-me">
-					<h4>More about me</h4>
-
-					<p>I build new projects just to tickle my brain and love teaching my fellows how they're made.</p>
-
-					<p>While I keep busy learning new skills, I love to meet new people in search of a great team & projects that interest me.</p>
-
-
-					<hr>
-
-					<h4>TOP EXPERTISE</h4>
-
-					<p>Fullstack developer with primary focus on Django + Machine learning:
-					<a target="_blank" href="{% static 'alokResume.pdf' %}">Download Resume</a>
-					</p>
-
-					<div id="skills">
-						<ul>
-							<li>Python</li>
-							<li>Django</li>
-							<li>Machine learning</li>
-							<li>Mysql</li>
-							<li>mongoDB</li>
-							<li>React</li>
-						</ul>
-
-						<ul>
-							<li>Django rest API</li>
-							<li>C++/C</li>
-							<li>AWS (sagmaker/S3/EC2)</li>
-							<li>Git/Github/Heroku</li>
-							<li>HTML/CSS/Bootstrap</li>
-						</ul>
-
-					</div>
-
-				</div>
-
-
-				<div class="social-links">
-					<img id="social_img" src="../images/demo/alok.jpg">
-					<h3>Find me on Twitter & Linkdein</h3>
-
-					<a target="_blank" href="https://www.linkedin.com/in/alokknight">Linkedin: @alokknight</a>
-					<br>
-					<a target="_blank" href="https://twitter.com/aalokknight">Twitter: @aalokknight</a>
-				</div>
-			</div>
-
+		<div id="hpage_latest">
+		  <ul>
+			<li><img src="../images/demo/190x80.gif" alt="" />
+			  <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+			  <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et.</p>
+			  <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+			</li>
+			<li><img src="../images/demo/190x80.gif" alt="" />
+			  <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+			  <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et.</p>
+			  <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+			</li>
+			<li class="last"><img src="../images/demo/190x80.gif" alt="" />
+			  <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+			  <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla et.</p>
+			  <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+			</li>
+		  </ul>
+		  <br class="clear" />
 		</div>
-	</section>
-
-	<section class="s1">
-		<div class="main-container">
-			<h3 style="text-align: center;">Want to see some of my past projects</h3>
-
-			<div class="post-wrapper">
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="{{ project.img.url }}">
-						<div class="post-preview">
-							<h6 class="post-title">Dynamic Website</h6>
-							<p class="post-intro">{{project.desc|safe}}</p>
-							<a href="{%  url 'projects' project.slug %}">Read More</a>
-							<button type="button" onclick="window.location.href='https://github.com/alokknight/'"class="btn btn-sm btn-outline-secondary">Git</button>
-                            <button type="button" onclick="window.location.href='https://coderpapa.herokuapp.com'"class="btn btn-sm btn-outline-secondary">View</button>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="{{ project.img.url }}">
-						<div class="post-preview">
-							<h6 class="post-title">Car Price Prediction</h6>
-							 <p class="post-intro">{{project.desc|safe}}</p>
-							 <a href="{%  url 'projects' project.slug %}">Read More</a>
-							<button type="button" onclick="window.location.href='https://github.com/alokknight/'" class="btn btn-sm btn-outline-secondary">Git</button>
-                            <button type="button" onclick="window.location.href='https://coderpapa.herokuapp.com/carprice/'" class="btn btn-sm btn-outline-secondary">View</button>
-						</div>
-					</div>
-				</div>
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="Wishky Qulaity CheckUp">
-						<div class="post-preview">
-							<h6 class="post-title">Wishky Qulaity CheckUp</h6>
-							 <p class="post-intro">{{project.desc|safe}}</p>
-							 <a href="{%  url 'projects' project.slug %}">Read More</a>
-							<button type="button" onclick="window.location.href='https://github.com/alokknight/'"class="btn btn-sm btn-outline-secondary">Git</button>
-                            <button type="button" onclick="window.location.href='https://whiskywithml.herokuapp.com'" class="btn btn-sm btn-outline-secondary">View</button>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-			<p align="center">
-				<a href="{% url 'projects' %}">View more</a>
-			</p>
-		</div>
-	</section>
-
-	<section class="s2">
-		<div class="main-container">
-			<a href=""></a>
-			<h3 style="text-align: center;">Get In Touch</h3>
-
-			<form id="contact-form" method="POST" action="{% url 'send_email' %}">
-				<a name="contact"></a>
-
-				<label>Name</label>
-				<input required class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input required class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input required class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea required class="input-field" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Send">
-			</form>
-		</div>
-	</section>
-
-	<script type="text/javascript">
-		let static = "{% static 'css' %}"
-	</script>
-
-	<script type="text/javascript" src="../layout/styles/js/script.js"></script>
-</body>
-</html>
+	  </div>
+	  <div id="column">
+		<ul id="latestnews">
+		  <li><img src="../images/demo/80x80.gif" alt="" />
+			<p><strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque lobor ttis non euis que morbi penas dapi bulum orna. Urnaul trices quis curabitur.</p>
+		  </li>
+		  <li><img src="../images/demo/80x80.gif" alt="" />
+			<p><strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque lobor ttis non euis que morbi penas dapi bulum orna. Urnaul trices quis curabitur.</p>
+		  </li>
+		  <li><img src="../images/demo/80x80.gif" alt="" />
+			<p><strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque lobor ttis non euis que morbi penas dapi bulum orna. Urnaul trices quis curabitur.</p>
+		  </li>
+		  <li><img src="../images/demo/80x80.gif" alt="" />
+			<p><strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque lobor ttis non euis que morbi penas dapi bulum orna. Urnaul trices quis curabitur.</p>
+		  </li>
+		  <li class="last"><img src="../images/demo/80x80.gif" alt="" />
+			<p><strong><a href="#">Indonectetus facilis leo.</a></strong> Nullamlacus dui ipsum cons eque lobor ttis non euis que morbi penas dapi bulum orna. Urnaul trices quis curabitur.</p>
+		  </li>
+		</ul>
+	  </div>
+	  <br class="clear" />
+	</div>
+	<br class="clear" />
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col5">
+	<div class="gallery">
+	  <h2>Latest Gallery Pics</h2>
+	  <ul>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li class="last"><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+		<li class="last"><a href="#"><img src="../images/demo/174x174.gif" alt="" /></a></li>
+	  </ul>
+	  <br class="clear" />
+	</div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col6">
+	<div id="footer">
+	  <div class="footbox twitter">
+		<h2>Latest From Twitter</h2>
+		<ul>
+		  <li><a href="#">@TwitterName</a> nibhpede faucibulum ris phasellentum elit sed hend quisque.  1 day ago</li>
+		  <li><a href="#">@TwitterName</a> tellentumst monterdum augue curabitae elit felit, elitligula adipiscingilla. 1 day ago</li>
+		  <li><a href="#">@TwitterName</a> libero praesentum sed? 1 day ago</li>
+		  <li><a href="#">@TwitterName</a> condimentesque nec facilis pretium tellenterdum. Vivamusid elit curabitur augue. 1 day ago</li>
+		  <li><a href="#">@TwitterName</a> ligula sed ipsum in tellentesque donec ac. 1 day ago</li>
+		</ul>
+	  </div>
+	  <div class="footbox flickr">
+		<h2>Latest From Flickr</h2>
+		<ul>
+		  <li><a href="#"><img src="../images/demo/80x80.gif" alt="" /></a></li>
+		  <li><a href="#"><img src="../images/demo/80x80.gif" alt="" /></a></li>
+		  <li><a href="#"><img src="../images/demo/80x80.gif" alt="" /></a></li>
+		  <li><a href="#"><img src="../images/demo/80x80.gif" alt="" /></a></li>
+		  <li><a href="#"><img src="../images/demo/80x80.gif" alt="" /></a></li>
+		  <li><a href="#"><img src="../images/demo/80x80.gif" alt="" /></a></li>
+		</ul>
+		<br class="clear" />
+	  </div>
+	  <div class="footbox posts">
+		<h2>Latest Blog Posts</h2>
+		<ul>
+		  <li><a href="#">Lorem ipsum dolor</a></li>
+		  <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+		  <li><a href="#">Praesent et eros</a></li>
+		  <li><a href="#">Praesent et eros</a></li>
+		  <li><a href="#">Lorem ipsum dolor</a></li>
+		  <li><a href="#">Suspendisse in neque</a></li>
+		  <li><a href="#">Phasellus tempor vestibulum</a></li>
+		  <li><a href="#">Vestibulum quis augu mauris</a></li>
+		  <li class="last"><a href="#">Suspendisse in neque</a></li>
+		</ul>
+	  </div>
+	  <div class="footbox banners last">
+		<h2>Advertise Here</h2>
+		<ul>
+			<li><a href="#"><img src="../images/demo/200x150.gif" alt="" /></a></li>
+			<li><a href="#"><img src="../images/demo/200x150.gif" alt="" /></a></li>
+		</ul>
+	  </div>
+	  <br class="clear" />
+	</div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col7">
+	<div id="copyright">
+	  <p class="fl_left">Copyright &copy; 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+	  <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+	  <br class="clear" />
+	</div>
+  </div>
+  </body>
+  </html>

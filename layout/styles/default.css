@@ -99,7 +99,7 @@ h6 { font-size: 16px;}
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 
+	grid-template-areas:
 		'nav-wrapper nav-wrapper'
 		'left-column right-column'
 	;
@@ -204,7 +204,7 @@ h6 { font-size: 16px;}
 		padding: 10px;
 		width: 100%;
 		border-top:2px solid var(--borderColor);
-			
+
 		font-size: 18px;
 		text-align: center;
 		margin:0;
@@ -412,7 +412,7 @@ h6 { font-size: 16px;}
 	border-radius: 5px;
 	margin: 2px;
 	padding: 2px 5px;
-	font-size: 12px;	
+	font-size: 12px;
 }
 
 
@@ -441,7 +441,7 @@ h6 { font-size: 16px;}
 .input-field{
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom:10px; 
+	padding-bottom:10px;
 	background-color: var(--secondaryColor);
 	border-radius: 5px;
 	border:1px solid var(--borderColor);
@@ -453,7 +453,7 @@ h6 { font-size: 16px;}
 	margin-top: 10px;
 	width: 100%;
 	padding-top: 10px;
-	padding-bottom:10px; 
+	padding-bottom:10px;
 	color: #fff;
 	background-color: var(--buttonColor);
 	border:none;
@@ -469,7 +469,7 @@ h6 { font-size: 16px;}
 @media screen and (max-width: 800px){
 	.intro-wrapper{
 		grid-template-columns: 1fr;
-		grid-template-areas: 
+		grid-template-areas:
 			'nav-wrapper'
 			'left-column'
 			'right-column'
